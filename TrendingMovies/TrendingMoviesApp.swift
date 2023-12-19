@@ -4,19 +4,9 @@ import SwiftUI
 struct TrendingMoviesApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MoviesView(viewModel: MoviesViewModel(movieService: MovieService(networkService: APIService(),
+                                                                             baseURLString: AppConstants.moviesBaseURLString,
+                                                                             apiKey: AppConstants.moviesAPIKey)))
         }
-    }
-}
-
-struct ContentView: View {
-    var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
-        }
-        .padding()
     }
 }
