@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EB50CC0E2B311B8300CB2E86 /* URLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB50CC0C2B311B8300CB2E86 /* URLSession.swift */; };
+		EB50CC0F2B311B8300CB2E86 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB50CC0D2B311B8300CB2E86 /* APIService.swift */; };
 		EC9D23B52B30CE23008E5A0D /* TrendingMoviesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9D23B42B30CE23008E5A0D /* TrendingMoviesApp.swift */; };
 		EC9D23B92B30CE24008E5A0D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC9D23B82B30CE24008E5A0D /* Assets.xcassets */; };
 		EC9D23BC2B30CE24008E5A0D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC9D23BB2B30CE24008E5A0D /* Preview Assets.xcassets */; };
@@ -30,6 +32,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EB50CC0C2B311B8300CB2E86 /* URLSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLSession.swift; sourceTree = "<group>"; };
+		EB50CC0D2B311B8300CB2E86 /* APIService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		EC9D23B12B30CE23008E5A0D /* TrendingMovies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrendingMovies.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC9D23B42B30CE23008E5A0D /* TrendingMoviesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingMoviesApp.swift; sourceTree = "<group>"; };
 		EC9D23B82B30CE24008E5A0D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -63,6 +67,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EB50CC0B2B311B7300CB2E86 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				EB50CC102B311B8E00CB2E86 /* Network */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		EB50CC102B311B8E00CB2E86 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				EB50CC0D2B311B8300CB2E86 /* APIService.swift */,
+				EB50CC0C2B311B8300CB2E86 /* URLSession.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 		EC9D23A82B30CE23008E5A0D = {
 			isa = PBXGroup;
 			children = (
@@ -86,6 +107,7 @@
 		EC9D23B32B30CE23008E5A0D /* TrendingMovies */ = {
 			isa = PBXGroup;
 			children = (
+				EB50CC0B2B311B7300CB2E86 /* Managers */,
 				EC9D23B42B30CE23008E5A0D /* TrendingMoviesApp.swift */,
 				EC9D23B82B30CE24008E5A0D /* Assets.xcassets */,
 				EC9D23BA2B30CE24008E5A0D /* Preview Content */,
@@ -186,6 +208,7 @@
 					};
 					EC9D23C02B30CE25008E5A0D = {
 						CreatedOnToolsVersion = 14.2;
+						LastSwiftMigration = 1500;
 						TestTargetID = EC9D23B02B30CE23008E5A0D;
 					};
 					EC9D23CA2B30CE25008E5A0D = {
@@ -245,6 +268,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB50CC0E2B311B8300CB2E86 /* URLSession.swift in Sources */,
+				EB50CC0F2B311B8300CB2E86 /* APIService.swift in Sources */,
 				EC9D23B52B30CE23008E5A0D /* TrendingMoviesApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -456,6 +481,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = PQVP6Z8X66;
@@ -465,6 +491,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.TrendingMoviesTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TrendingMovies.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TrendingMovies";
@@ -476,6 +503,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = PQVP6Z8X66;
