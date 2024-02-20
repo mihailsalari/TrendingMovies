@@ -2,6 +2,18 @@
 
 TrendingMovies is a simple iOS application that allows users to explore trending movies and view their details. While the app covers the basic functionality of displaying movie lists and details, it also serves as a demonstration of high-quality software development practices, including unit tests, modularization, and clean code principles.
 
+## Screenshots
+<table>
+  <tr>
+    <td align="center">
+      <img src="https://github.com/mihailsalari/TrendingMovies/assets/23311250/ef58912c-d59b-49e6-b91e-34d7280795f7" width="300" alt="Screenshot 1">
+    </td>
+    <td align="center">
+      <img src="https://github.com/mihailsalari/TrendingMovies/assets/23311250/8c018c9a-4bd2-4094-8294-9426cd1e82aa" width="300" alt="Screenshot 2">
+    </td>
+  </tr>
+</table>
+
 ## Features
 
 - View a list of trending movies.
@@ -11,6 +23,8 @@ TrendingMovies is a simple iOS application that allows users to explore trending
 - Accessibility features with VoiceOver support.
 - Unit tests for the network and data layers.
 - UI tests for the app's user interface.
+
+
 
 ## Technologies Used
 
